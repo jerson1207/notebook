@@ -24,3 +24,14 @@ function reverseWords(string) {
 	return string.trim().split(/\s+/).reverse().join(' ')
 }
 ```
+```javascript
+function removeDups(arr) {
+	var newArr = [];
+	for (i of arr) {
+		if (newArr.indexOf(i) == -1) {
+			newArr.push(i)
+		}
+	}
+	return newArr;
+}
+```
