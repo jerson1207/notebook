@@ -1,5 +1,5 @@
-# How Much is True?
-Create a function which returns the number of true values there are in an array.
+# Reverse Words in a String
+Given an input string, reverse the string word by word, the first word will be the last, and so on.
 ### Examples
 ~~~
 reverseWords(" the sky is blue") ➞ "blue is sky the"
@@ -8,7 +8,7 @@ reverseWords("hello   world!  ") ➞ "world! hello"
 
 reverseWords("a good example") ➞ "example good a"
 ~~~
-## Code
+___
 ```javascript
 function reverseWords(s) {
 	return s.trim().replace(/ +/,' ').split(' ').reverse().join` `
