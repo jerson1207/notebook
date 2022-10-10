@@ -26,12 +26,12 @@ no_yelling("I just cannot believe it.") ➞ "I just cannot believe it."
 ---
 ```ruby
 def no_yelling(phrase)
-	phrase.gsub(/\?+$/, '?').gsub(/!+$/, '!')
+  phrase.gsub(/\?+$/, '?').gsub(/!+$/, '!')
 end
 ```
 ```ruby
 def no_yelling(phrase)
-	phrase.sub(/\!+\z|\?+\z/) { |m| m.include?('!') ? '!' : '?' }
+  phrase.sub(/\!+\z|\?+\z/) { |m| m.include?('!') ? '!' : '?' }
 end
 ```
 ```ruby
