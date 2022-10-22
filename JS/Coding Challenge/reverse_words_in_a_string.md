@@ -11,27 +11,27 @@ reverseWords("a good example") ➞ "example good a"
 ___
 ```javascript
 function reverseWords(s) {
-	return s.trim().replace(/ +/,' ').split(' ').reverse().join` `
+  return s.trim().replace(/ +/,' ').split(' ').reverse().join` `
 }
 ```
 ```javascript
 function reverseWords(s) {
-	return s.split(" ").reverse().join(" ")
+  return s.split(" ").reverse().join(" ")
 }
 ```
 ```javascript
 function reverseWords(string) {
-	return string.trim().split(/\s+/).reverse().join(' ')
+  return string.trim().split(/\s+/).reverse().join(' ')
 }
 ```
 ```javascript
 function removeDups(arr) {
-	var newArr = [];
-	for (i of arr) {
-		if (newArr.indexOf(i) == -1) {
-			newArr.push(i)
-		}
-	}
-	return newArr;
+  var newArr = [];
+  for (i of arr) {
+    if (newArr.indexOf(i) == -1) {
+      newArr.push(i)
+    }
+  }
+  return newArr;
 }
 ```
